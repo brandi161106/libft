@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z')
@@ -18,11 +20,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d", isalpha('2'));
-}
-*/
