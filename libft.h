@@ -1,6 +1,3 @@
-#ifndef LIBFT_H
-#define LIBFT_H
-
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -27,5 +24,7 @@ int		ft_isascii(int c);
 int		ft_isalpha(int c);
 void	*calloc(size_t nmemb, size_t size);
 void	ft_bzero(void *s, size_t n);
-
-#endif
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
