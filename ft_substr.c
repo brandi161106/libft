@@ -8,8 +8,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	slen = ft_strlen(s);
-	if (star >= slen)
-		return (strdup(""));
+	if (start >= slen)
+		return (ft_strdup(""));
 	if (len > slen - start)
 		len = slen - start;
 	sub_s = malloc(len + 1);

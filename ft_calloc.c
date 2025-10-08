@@ -12,14 +12,14 @@
 
 #include "libft.h"
 
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*buffer;
 	size_t			buffer_size;
 
 	if (nmemb == 0 || size == 0)
-		return (NULL);
-	if (nmemb == 4294967295 / size)
+		return (malloc(0));
+	if (nmemb > 4294967295 / size)
 		return (NULL);
 	buffer_size = nmemb * size;
 	buffer = malloc(buffer_size);

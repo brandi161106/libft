@@ -14,18 +14,22 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
-	int	j;
+	int				i;
+	int				j;
+	unsigned char	x;
 
 	i = 0;
-	j = 0;
+	j = -1;
+	x = (unsigned char)c;
 	while (s[i] != '\0')
 	{
-		if (c == s[i])
+		if (x == s[i])
 			j = i;
 		i++;
 	}
-	if (j != '0')
-		return (&s[j]);
+	if (x == '\0')
+		return ((char *)&s[i]);
+	if (j != -1)
+		return ((char *)&s[j]);
 	return (NULL);
 }
