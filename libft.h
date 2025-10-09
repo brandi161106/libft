@@ -6,13 +6,17 @@
 /*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:35:38 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/09 17:35:39 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/09 19:17:16 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <unistd.h>
+#ifndef LIBFT_H
+# define LIBFT_H
 
+# include <stdlib.h>
+# include <unistd.h>
+
+char	*ft_strtrim(char const *s1, char const *set);
 int		ft_atoi(const char *nptr);
 int		ft_isalnum(int c);
 int		ft_tolower(int c);
@@ -44,3 +48,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+
+#endif

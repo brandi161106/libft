@@ -11,7 +11,7 @@ SRC = ft_atoi.c ft_bzero.c ft_calloc.c \
 			ft_strlcat.c ft_strlcpy.c ft_strlen.c \
 			ft_strncmp.c ft_strnstr.c ft_strrchr.c \
 			ft_substr.c ft_tolower.c \
-			ft_toupper.c
+			ft_toupper.c ft_strtrim.c
 OBJ = $(SRC:.c=.o)
 
 CC = cc
