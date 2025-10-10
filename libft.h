@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+char	*ft_itoa(int n);
 char	*ft_strtrim(char const *s1, char const *set);
 int		ft_atoi(const char *nptr);
 int		ft_isalnum(int c);
