@@ -1,3 +1,6 @@
+#ifndef LIBFT.H
+#def LIBFT.H
+
 NAME = libft.a
 
 SRC = ft_atoi.c ft_bzero.c ft_calloc.c \
@@ -37,3 +40,5 @@ fclean: clean
 re: fclean all
 
 .PHONY: clean fclean re bonus
+
+# endef
