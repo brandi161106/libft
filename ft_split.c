@@ -49,17 +49,17 @@ char	**ft_split(char const *s, char c)
 		if (s[i] != c && start == -1)
 			start = i;
 		if ((s[i] == c || s[i + 1] == '\0') && start != -1)
-			{
-				if (s[i] == c)
-					len = i - start;
-				else
-					len = i - start + 1;
-				result[j] = ft_substr(s, start, len);
-				if (!result[j])
-					return (ft_free_result(result, j), NULL);
-				j++;
-				start = -1;
-			}
+		{
+			if (s[i] == c)
+				len = i - start;
+			else
+				len = i - start + 1;
+			result[j] = ft_substr(s, start, len);
+			if (!result[j])
+				return (ft_free_result(result, j), NULL);
+			j++;
+			start = -1;
+		}
 		i++;
 	}
 	result[j] = NULL;
