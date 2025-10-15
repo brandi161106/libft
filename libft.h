@@ -6,15 +6,15 @@
 /*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:35:38 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/09 19:17:16 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/15 18:36:08 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdlib.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 char	*ft_itoa(int n);
 char	*ft_strtrim(char const *s1, char const *set);

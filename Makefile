@@ -1,6 +1,3 @@
-#ifndef LIBFT.H
-#def LIBFT.H
-
 NAME = libft.a
 
 SRC = ft_atoi.c ft_bzero.c ft_calloc.c \
@@ -26,7 +23,7 @@ $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)  
 	@echo "Library $(NAME) created successfully!"
 
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
@@ -39,6 +36,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean re bonus
-
-# endef
+.PHONY: clean fclean re all 
