@@ -21,9 +21,7 @@ int	ft_count_words(char const *s, char c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] != c && i == 0)
-			words++;
-		else if (s[i] != c && s[i - 1] == c)
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
 			words++;
 		i++;
 	}
@@ -38,6 +36,16 @@ void	ft_free_result(char **arr, int j)
 		free(arr[j]);
 	}
 	free(arr);
+}
+
+int	ft_word_len(char const *s, int start, char c)
+{
+	int	len;
+
+	len = 0;
+	while (s[start + len] && s[start + len] != c)
+		len++;
+	return (len);
 }
 
 char	**ft_solve_res(char const *s, char **result, char c)
@@ -56,7 +64,7 @@ char	**ft_solve_res(char const *s, char **result, char c)
 			start = i;
 		if ((s[i] == c || s[i + 1] == '\0') && start != -1)
 		{
-			len = i - start + (s[i + 1] == '\0');
+			len = ft_word_len(s, start, c);
 			result[j] = ft_substr(s, start, len);
 			if (!result[j])
 				return (ft_free_result(result, j), NULL);
