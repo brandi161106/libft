@@ -6,7 +6,7 @@
 /*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:35:20 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/15 18:07:27 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/24 21:01:18 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	x[i] = '\0';
 	return (x);
+}
+
+char	ft_capitalize(unsigned int i, char c)
+{
+	if (i % 2 == 0)
+		c = c - 32;
+	return (c);
 }

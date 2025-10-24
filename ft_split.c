@@ -6,7 +6,7 @@
 /*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:18:17 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/15 18:14:59 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/24 21:36:57 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,4 +89,22 @@ char	**ft_split(char const *s, char c)
 	if (ft_solve_res(s, result, c) == NULL)
 		return (NULL);
 	return (result);
+}
+
+int	main(void)
+{
+	char	**arr;
+	int		i;
+
+	i = 0;
+	arr = ft_split("pato jon brandon", ' ');
+	while (arr[i])
+	{
+		write(1, arr[i], ft_strlen(arr[i]));
+		free(arr[i]);
+		write(1, "\n", 1);
+		i++;
+	}
+	free(arr);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 20:17:57 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/01 20:23:33 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/24 21:16:58 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		i++;
 	}
 	return (NULL);
+}
+
+int	main(void)
+{
+	printf("%s\n", ft_strnstr("hola mund mUnd mmmmmmm mundo dsadajk", "mun", 50));
 }
