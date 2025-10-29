@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: blocquia <blocquia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:38:28 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/09 19:33:14 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:49:25 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*s2;
 
 	i = 0;
-	if (s1 == NULL || set == NULL || ft_found_set(s1, '\0'))
+	if (s1 == NULL || set == NULL)
 		return (NULL);
 	while (s1[i] && ft_found_set(set, s1[i]))
 		i++;
@@ -49,3 +49,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s2[f - i] = '\0';
 	return (s2);
 }
+/*
+int	main(void)
+{
+	printf("%s\n", ft_strtrim("pcaoHolamundo", "apoc"));
+	return (0);
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: blocquia <blocquia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 20:28:13 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/06 18:17:44 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:25:16 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	if (size <= len_dst)
 		return (size + len_src);
 	i = 0;
-	while (src[i] && (len_dst + i +1) < size)
+	while (src[i] && (len_dst + i + 1) < size)
 	{
 		dst[len_dst + i] = src[i];
 		i++;

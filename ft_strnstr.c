@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: blocquia <blocquia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 20:17:57 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/24 21:16:58 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:28:04 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
+/*
 int	main(void)
 {
-	printf("%s\n", ft_strnstr("hola mund mUnd mmmmmmm mundo dsadajk", "mun", 50));
+	printf("%s\n", ft_strnstr("hola mund Mun mundo sad", "mundo", 50));
 }
+*/

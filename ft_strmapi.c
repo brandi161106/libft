@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: blocquia <blocquia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:35:20 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/24 21:01:18 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:11:00 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,17 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (x);
 }
 
-char	ft_capitalize(unsigned int i, char c)
+/*
+char	ft_capitalize_odd(unsigned int i, char c)
 {
 	if (i % 2 == 0)
 		c = c - 32;
 	return (c);
 }
+
+int	main(void)
+{
+	printf("%s\n", ft_strmapi("hols", ft_capitalize));
+	return(0);
+}
+*/

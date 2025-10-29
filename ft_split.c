@@ -6,7 +6,7 @@
 /*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:18:17 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/24 21:36:57 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/29 16:40:46 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (result);
 }
-
+/*
 int	main(void)
 {
 	char	**arr;
@@ -107,4 +107,4 @@ int	main(void)
 	}
 	free(arr);
 	return (0);
-}
+}*/

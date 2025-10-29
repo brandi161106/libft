@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blocquia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: blocquia <blocquia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:18:07 by blocquia          #+#    #+#             */
-/*   Updated: 2025/10/15 17:18:11 by blocquia         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:00:08 by blocquia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,3 +55,11 @@ char	*ft_itoa(int n)
 	}
 	return (s);
 }
+
+/*
+int	main(void)
+{
+	printf("%s\n", ft_itoa(23891839));
+	return (0);
+}
+*/
